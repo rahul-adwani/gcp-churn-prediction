@@ -4,7 +4,7 @@ import numpy as np
 
 app = Flask(__name__)
 
-model = pickle.load(open("D:/INSAID/LMS/Model Deployments/Module 4 - Model Deployment using Flask/HandsOn/randomforest.pkl","rb"))
+model = pickle.load(open("randomforest.pkl","rb"))
 
 @app.route('/')
 def main():
